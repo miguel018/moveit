@@ -56,6 +56,7 @@ export function Countdown() {
       {hasFinished ? (
         <button disabled className={styles.countdownButton}>
           Ciclo encerrado
+          <img src="icons/check-circle.svg" alt="" />
         </button>
       ) : (
         <>
@@ -66,6 +67,7 @@ export function Countdown() {
               onClick={resetCountdown}
             >
               Abandonar ciclo
+              <img src="icons/close.svg" alt="" />
             </button>
           ) : (
             <button
